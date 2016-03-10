@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<div id="listing1" style="box-shadow:0 0 8px rgba(0,0,0,0.5)">
+          <img src="./image/image.png" width="25%" height="235">
+          <input type="checkbox" name="onbid" value="IsOnBid" >open for bid<br>
+          
+          <div class="sharebutton">
+          </div>
+    </div>
+	  <script src="./src/jquery-2.2.0.js"></script>
+    <!-- // <script src="https://apis.google.com/js/plusone.js"></script> -->
+     <script src="./src/socialshare.js"></script>
+    <script>
+    var config={
+                facebook:{
+                    method: 'feed',
+                    name: 'This content has been changed.',
+                    link: ' http://www.hyperarts.com:8000/plugin/trying.html',
+                    picture: 'https://im.proptiger.com/1/504158/6/aswani-properties-springdale-elevation-772228.jpeg?width=520&height=400',
+                    caption: 'This is the content of the "caption" field.',
+                    description: 'This is the content of the "description" field, below the caption.',
+
+                    message: ''
+                },
+                googleplus:{
+                    url:  "http://hyperarts.com:8000/plugin/trying.html",
+
+                },
+                mail:{
+                  subject: "I wanted you to see this site",
+                  mailbody: "Check out this site http://hyperarts.com:8000/plugin/trying2.html"
+                }
+                
+    };
+      $('.sharebutton').socialShare(config);
+      
+    </script>
+</body>
+</html>
+
