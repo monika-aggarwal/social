@@ -9,6 +9,9 @@ body{
 	font-family: arial;
 	font-weight: normal;
 }
+.animation{
+	visibility:hidden;
+}
 .clear-fix{
 	clear: both;
 }

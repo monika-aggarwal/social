@@ -18,8 +18,14 @@
             },
         twitter:{
         			url:  $(this).attr('data-url')
-        }    
+        },  
+        mail:{
+                    url:  $(this).attr('data-url')         
+        },
+        whatsapp:{
+                    url:  $(this).attr('data-url')
+        }
 
-       }
+       };
       $('#' + this.id + ' .sharebutton').createshare(config);
     });

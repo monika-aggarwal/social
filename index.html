@@ -3,6 +3,7 @@
 <head>
   <meta>
   <title>My property</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet"  href="style/style.css" type="text/css" >
 </head>
 <body>
@@ -30,8 +31,9 @@
                 <label class="hide" >listing1<label>
           </div>
           <div class="clear-fix"></div>  
-          <div class="sharebutton">
+          <div class="sharebutton animation">
           </div>
+          <button type="button" class="share_but btn btn-default">share</button>
     </div>
 
     <div id="2744528" class="mainListingCard main-listing-card" data-url="https://beta.makaan-ws.com/bangalore/builder-project-in-nagarabhavi-416302/3bhk-3t-1548-sqft-apartment">
@@ -57,9 +59,10 @@
                <label class="hide" >listing2<label>
           </div>
           <div class="clear-fix"></div> 
-          <div class="sharebutton">
+          <div class="sharebutton animation" >
 
           </div>
+          <button type="button" class="share_but btn btn-default">share</button>
     </div>
 
     <div id="555619" class="mainListingCard main-listing-card" data-url="https://mp-qa2.makaan-ws.com/panchkula/builder-project-in-panchkula-sec-20-555619/3bhk-3t-1800-sqft-apartment">
@@ -85,14 +88,24 @@
                <label class="hide" >listing3<label>
           </div>
           <div class="clear-fix"></div>
-          <div class="sharebutton">
+          <div class="sharebutton animation">
           </div>
+          <button type="button" class="share_but btn btn-default">share</button>
     </div>
 
 	  <script src="./src/jquery-2.2.0.js"></script>
     <!-- // <script src="https://apis.google.com/js/plusone.js"></script> -->
      <script src="./src/socialshare.js"></script>
      <script src="./src/app.js"></script>
+     <script>
+     function visibility(e){
+
+     }
+     $(document).ready(function(){
+      $("button").on("click",function(){
+        $(this).closest('.main-listing-card').find('.sharebutton').toggleClass('animation')
+      })
+     });</script>
 </body>
 </html>
 
