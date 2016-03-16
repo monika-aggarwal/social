@@ -12,6 +12,9 @@ body{
 .animation{
 	visibility:hidden;
 }
+.mobile_display{
+	display:none;
+}
 .clear-fix{
 	clear: both;
 }
